@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Movie Theater</string>
+    <string name="string_hint_movie_title">Enter movie name</string>
+    <string name="string_hint_movie_plot">Enter movie plot</string>
+    <string name="manually">Manually</string>
+    <string name="from_web">From Web</string>
+    <string name="adding_option_query">How would you like to add the movie?</string>
+    <string name="add_new_dialog_title">Toto, Ive got a feeling were not in Kansas anymore!</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_action_canceled">Action canceled</string>
+    <string name="string_web_search_hint">Type movie name</string>
+    <string name="no_data_found">Sorry, we could not find any data</string>
+    <string name="try_again">Try Again</string>
+    <string name="delete_movie_dialog_query">Would you like to delete or edit this movie?</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="delete_alert">ALERT! you are about to delete a movie.</string>
+    <string name="delete_all_alert">ALERT! you are about to delete ALL movies.</string>
+    <string name="string_exit_app">Exit app</string>
+    <string name="delete_movie_dialog_title">Delete or Edit</string>
+    <string name="delete_all_dialog_title">ALERT!</string>
+    <string name="exit_option_query">Are you shure you like to leave?</string>
+    <string name="extit_app_dialog_title">Please don\'t Leave!</string>
+    <string name="see_you_later">See you later</string>
+    <string name="all_movies_deleted">You\'re theater has been deleted</string>
+    <string name="string_hint_pic_url">Enter pictur URL</string>
+    <string name="rating_exeption">There was no aviable Rating. Please set rating.</string>
+    <string name="movie_content_alert">Movie was not saved. Movie title is required. Please try again.</string>
+    <string name="watched">Watched</string>
+
+
+</resources>

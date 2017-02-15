@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:scrollIndicators="top|bottom">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="UselessLeaf"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageBtn_save"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_margin="3.5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageBtn_back"
+            android:src="@android:drawable/ic_media_rew"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_margin="2.5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton_show_pic"
+            android:src="@android:drawable/ic_menu_mapmode"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="2.5dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/watched"
+            android:id="@+id/checkBox_watched"
+            android:checked="false"
+            android:allowUndo="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="9" />
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView2"
+        android:layout_gravity="right"
+        android:layout_weight="9"
+        android:padding="2.5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:outlineProvider="paddedBounds"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView15"
+                    android:src="@drawable/name"
+                    android:layout_alignBottom="@+id/editText_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.08" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_movie_title"
+                    android:hint="@string/string_hint_movie_title"
+                    android:layout_below="@+id/imageView_tickets"
+                    android:layout_alignLeft="@+id/editText_plot"
+                    android:layout_alignStart="@+id/editText_plot"
+                    android:layout_toLeftOf="@+id/imageView_tickets"
+                    android:layout_toStartOf="@+id/imageView_tickets"
+                    android:layout_weight="1.54" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="54dp"
+                    android:id="@+id/imageView16"
+                    android:src="@drawable/plot"
+                    android:layout_below="@+id/imageView_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.06" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_movie_plot"
+                    android:hint="@string/string_hint_movie_plot"
+                    android:layout_alignBottom="@+id/imageView_plot"
+                    android:layout_alignLeft="@+id/movie_ratingBar"
+                    android:layout_alignStart="@+id/movie_ratingBar"
+                    android:layout_toLeftOf="@+id/imageView_tickets"
+                    android:layout_toStartOf="@+id/imageView_tickets"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView17"
+                    android:src="@drawable/picurl"
+                    android:layout_alignTop="@+id/editText_pic_url"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.08" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_pic_url"
+                    android:hint="@string/string_hint_pic_url"
+                    android:layout_below="@+id/imageView_plot"
+                    android:layout_alignRight="@+id/editText_plot"
+                    android:layout_alignEnd="@+id/editText_plot"
+                    android:layout_toEndOf="@+id/imageView_plot"
+                    android:layout_toRightOf="@+id/imageView_plot"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView19"
+                    android:src="@drawable/rating"
+                    android:layout_above="@+id/imageView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.08" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar_movie_rating"
+                    android:layout_toRightOf="@+id/imageView_movie_rating"
+                    android:layout_alignBottom="@+id/imageView_movie_rating"
+                    android:layout_below="@+id/imageView_pic_url" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info"
+            android:id="@+id/imageView_movie_image"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp" />
+    </LinearLayout>
+
+</LinearLayout>
